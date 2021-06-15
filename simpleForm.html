@@ -11,9 +11,9 @@
 document.getElementById('calc').addEventListener('click', updater);
 
 function updater () {
-    var cost = 5;
+    var cost = 10;
     var quantity = document.getElementById('quantity').value;
-    var totalcost = (cost * quantity);
+    var totalcost = (cost * quantity)+2;
     
     document.getElementById('total').innerText = totalcost;
 }
