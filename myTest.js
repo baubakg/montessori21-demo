@@ -5,10 +5,10 @@ fixture `Getting Started`
 
 test('My first test', async t => {
 
-    var value = 7;
+    var value = 9;
 
     await t
         .typeText('#quantity', value.toString())
         .click('#calc')
-        .expect(Selector('#total').innerText).eql("72");
+        .expect(Selector('#total').innerText).eql("92");
 });
